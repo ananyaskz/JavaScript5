@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Converts JS objects into JSON file and send it over network/server</h1>
+    <script>
+        var myobj={ Name: "Jisung", Age: 25, City: "Seoul" };
+        var myJSON=JSON.stringify(myobj);
+        document.write(myJSON);
+        document.write("<br>");
+        var myobj2=JSON.parse(myJSON);
+        document.write(myobj2.Name)
+        document.write("<br>");
+        document.write(myobj2.Age);
+    </script>
+</body>
+</html>
